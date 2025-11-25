@@ -707,6 +707,12 @@ export const gliner = (model: ModelData): string[] => [
 model = GLiNER.from_pretrained("${model.id}")`,
 ];
 
+export const gliner = (model: ModelData): string[] => [
+	`from gliner2 import GLiNER2
+
+model = GLiNER2.from_pretrained("${model.id}")`,
+];
+
 export const indextts = (model: ModelData): string[] => [
 	`# Download model
 from huggingface_hub import snapshot_download
